@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Avadh University</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-wrap">
+      <div class="brand">
+        <img src="image/logo.png" alt="Avadh University Logo">
+        <div>
+          <h1>Avadh University</h1>
+          <div class="subtext">World's biggest university center</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#course">Course</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <button class="cta">Visit to know more</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="eyebrow">Established for excellence</div>
+        <h2 class="title">
+          Avadh University — 
+          <span class="highlight">Shaping leaders, creators & innovators</span>
+        </h2>
+        <p class="lead">
+          Join a community where ambition meets opportunity. Avadh University offers modern labs, industry-linked courses, and global exposure to help you build a future-ready career.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary">Visit to know more</button>
+          <button class="btn-ghost">Apply Now</button>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="stats">
+          <div>
+            <div class="stat">120+</div>
+            <div class="stat-sub">Courses offered</div>
+          </div>
+          <div>
+            <div class="stat">50k+</div>
+            <div class="stat-sub">Students enrolled</div>
+          </div>
+        </div>
+        <p>Schedule a campus visit or attend a live online info session.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section" id="about">
+      <h3>About Avadh University</h3>
+      <p>
+        Avadh University is committed to academic excellence, research, and industry collaboration. Our campus fosters creativity, critical thinking, and real-world learning through project-based courses and experienced faculty.
+      </p>
+    </section>
+
+    <section class="section" id="course">
+      <h3>Courses</h3>
+      <div class="grid courses">
+        <div class="course">
+          <div class="pill">B.Tech</div>
+          <h4>Computer Science & Engineering</h4>
+          <p>Strong foundation in algorithms, systems, and software engineering with industry projects.</p>
+        </div>
+        <div class="course">
+          <div class="pill">BBA</div>
+          <h4>Business & Management</h4>
+          <p>Practical training in business operations, finance, and entrepreneurship.</p>
+        </div>
+        <div class="course">
+          <div class="pill">M.Sc</div>
+          <h4>Data Science & AI</h4>
+          <p>Hands-on curriculum covering machine learning, statistics, and data pipelines.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="blog">
+      <h3>From our Blog</h3>
+      <div class="grid blog">
+        <article class="post">
+          <h4>How to prepare for internships</h4>
+          <p>Tips on building a strong portfolio, networking, and interview practice.</p>
+        </article>
+        <article class="post">
+          <h4>Student life: balancing study and fun</h4>
+          <p>Discover clubs, events, and wellness resources available on campus.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h3>Contact</h3>
+      <div class="contact-grid">
+        <div>
+          <p>If you have questions about admissions, courses, or campus visits — reach out and we'll get back to you.</p>
+          <p><strong>Address:</strong> Avadh University Campus, Your City</p>
+          <p><strong>Email:</strong> admissions@avadh.edu</p>
+          <p><strong>Phone:</strong> +91 12345 67890</p>
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="How can we help?" required></textarea>
+
+          <div class="form-buttons">
+            <button class="cta" type="submit">Send Message</button>
+            <button class="cta dark" type="button">Call Now</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Avadh University</strong>
+        <div class="small">
+          World's biggest university center — committed to learning and innovation.
+        </div>
+      </div>
+      <div class="small">
+        © <span id="year"></span> Avadh University. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
